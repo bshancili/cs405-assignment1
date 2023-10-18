@@ -1,0 +1,93 @@
+<head>
+    <title>CS405 - Assignment 1</title>
+    <link rel="stylesheet" href="syle.css">
+</head>
+
+<body>
+    <h1>Deaths by Sex and Educational Level in 2022</h1>
+
+    <svg width="1250" height="400" style="margin-top: 20px;" xmlns="http://www.w3.org/2000/svg">
+        <!-- x-axis -->
+        <line x1="50" y1="250" x2="1150" y2="250" stroke="black" stroke-width="2" />
+        <text x="1160" y="245">Education</text>
+        <text x="1160" y="265">Level</text>
+    
+        <!-- y-axis -->
+        <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="2" />
+        <text x="15" y="25">Total Deaths</text>
+        <text x="7.5" y="45">(in Thousands)</text>
+
+        <!-- y-axis ticks -->
+        <line x1="60" y1="75" x2="1150" y2="75" stroke="grey" stroke-dasharray="5" stroke-width="1" />
+        <line x1="60" y1="100" x2="1150" y2="100" stroke="grey" stroke-dasharray="5" stroke-width="1" />
+        <line x1="60" y1="125" x2="1150" y2="125" stroke="grey" stroke-dasharray="5" stroke-width="1" />
+        <line x1="60" y1="150" x2="1150" y2="150" stroke="grey" stroke-dasharray="5" stroke-width="1" />
+        <line x1="60" y1="175" x2="1150" y2="175" stroke="grey" stroke-dasharray="5" stroke-width="1" />
+        <line x1="60" y1="200" x2="1150" y2="200" stroke="grey" stroke-dasharray="5" stroke-width="1" />
+        <line x1="60" y1="225" x2="1150" y2="225" stroke="grey" stroke-dasharray="5" stroke-width="1" />
+        
+        <!-- y-axis label indicators -->
+        <line x1="45" y1="75" x2="55" y2="75" stroke="black" stroke-width="2" />
+        <line x1="45" y1="100" x2="55" y2="100" stroke="black" stroke-width="2" />
+        <line x1="45" y1="125" x2="55" y2="125" stroke="black" stroke-width="2" />
+        <line x1="45" y1="150" x2="55" y2="150" stroke="black" stroke-width="2" />
+        <line x1="45" y1="175" x2="55" y2="175" stroke="black" stroke-width="2" />
+        <line x1="45" y1="200" x2="55" y2="200" stroke="black" stroke-width="2" />
+        <line x1="45" y1="225" x2="55" y2="225" stroke="black" stroke-width="2" />
+
+        <!-- y-axis labels -->
+        <text x="25" y="229.5">25</text>
+        <text x="25" y="204.5">50</text>
+        <text x="25" y="179.5">75</text>
+        <text x="17.5" y="154.5">100</text>
+        <text x="17.5" y="129.5">125</text>
+        <text x="17.5" y="104.5">150</text>
+        <text x="17.5" y="79.5">175</text>
+    
+        <!-- data points -->
+        <rect x="100" y="233.61" width="50" height="16.39" fill="blue" />
+        <rect x="150" y="183.601" width="50" height="66.399" fill="red" />
+        <text x="125" y="275">Illiterate</text>
+
+        <rect x="250" y="222.491" width="50" height="27.509" fill="blue" />
+        <rect x="300" y="204.11" width="50" height="45.890" fill="red" />
+        <text x="267" y="275">No school</text>
+        <text x="267" y="300">completed</text>
+
+        <rect x="400" y="130.106" width="50" height="119.894" fill="blue" />
+        <rect x="450" y="175.222" width="50" height="74.778" fill="red" />
+        <text x="400" y="275">Primary school</text>
+
+        <rect x="550" y="206.687" width="50" height="43.313" fill="blue" />
+        <rect x="600" y="235.843" width="50" height="14.157" fill="red" />
+        <text x="545" y="275">Primary education</text>
+        <text x="545" y="300">Junior high school</text>
+        <text x="555" y="325">and equivalent</text>
+
+        <rect x="700" y="215.661" width="50" height="34.339" fill="blue" />
+        <rect x="750" y="237.6" width="50" height="12.400" fill="red" />
+        <text x="710" y="275">High school</text>
+        <text x="705" y="300">and equivalent</text>  
+
+        <rect x="850" y="227.682" width="50" height="22.318" fill="blue" />
+        <rect x="900" y="243.824" width="50" height="6.176" fill="red" />
+        <text x="845" y="275">Higher education</text>
+
+        <rect x="1000" y="244.8" width="50" height="5.200" fill="blue" />
+        <rect x="1050" y="245.769" width="50" height="4.231" fill="red" />
+        <text x="1020" y="275">Unknown</text>
+    </svg>
+    
+    <div>
+        <svg width="100" height="50"">
+            <rect width="25" height="25" fill="blue" />
+            <text x="30" y="17.5" fill="black">Male</text>
+        </svg>
+
+        <svg width="100" height="50">
+            <rect width="25" height="25" fill="red" />
+            <text x="30" y="17.5" fill="black">Female</text>
+        </svg>
+    </div>
+
+</body>
